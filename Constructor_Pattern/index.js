@@ -12,7 +12,7 @@ Pokemon.prototype.attack = function (){
             return this.name + " used hydro pump!";
             break;
         default:
-            return this.name + " cannot attack!."
+            return this.name + " cannot attack!"
     }
 }
 
@@ -21,3 +21,7 @@ const squirtle = new Pokemon("Squirtle", "water");
 const bulbasaur = new Pokemon("Bulbasaur", "grass");
 
 console.log(bulbasaur.attack());
+
+module.exports = function(){
+    Pokemon
+}
