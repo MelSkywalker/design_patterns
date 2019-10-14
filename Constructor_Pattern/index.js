@@ -69,8 +69,6 @@ const squirtle = new Pokemon("Squirtle", "water");
 const bulbasaur = new Pokemon("Bulbasaur", "grass");
 const unknown = new Pokemon("Unknown", "notype");
 
-console.log(bulbasaur.attack());
+// console.log(bulbasaur.attack());
 
-module.exports = function(){
-    Pokemon
-}
+module.exports = Pokemon;
