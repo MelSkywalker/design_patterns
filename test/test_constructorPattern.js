@@ -1,12 +1,12 @@
-var Pokemon = require('../Constructor_Pattern/index');
+var Pokemon = require('../Design_Patterns/constructorPattern');
 var expect = require('chai').expect;
 
 describe('#Pokemon()', function(){
     
-    context('with no valid type', function(){
+    context('with no valid type', function() {
         it('should return your pokemon cannot attack', function(){
-            const unknown = new Pokemon("pokemon", "notype");
-            expect(unknown.attack()).to.equal('pokemon cannot attack!')
+            const unknown = new Pokemon("unknown", "notype");
+            expect(unknown.attack()).to.equal('unknown cannot attack!')
         })
     })
 
