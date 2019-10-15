@@ -17,9 +17,8 @@ const userModule = (function () {
         countAllowedUsers: function() {
             allowedUsers.length = 0;
             users.forEach(user => {
-                if(user.allowed === true){
+                if(user.allowed === true)
                     allowedUsers.push(user);
-                }
             });
             return allowedUsers.length;
         }
@@ -27,14 +26,3 @@ const userModule = (function () {
 })();
 
 module.exports = userModule;
-
-// userModule.addUser({
-// 	name: "someone",
-// 	pass: "somePass",
-// 	allowed: false
-// });
-// userModule.addUser({
-// 	name: "someone2",
-// 	pass: "somePass2",
-// 	allowed: true
-// });
