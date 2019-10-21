@@ -19,7 +19,7 @@ const userModule = (function () {
             users.forEach(user => {
                 if(user.allowed === true)
                     allowedUsers.push(user);
-            });
+            }); 
             return allowedUsers.length;
         }
     }
