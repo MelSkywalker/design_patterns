@@ -21,15 +21,15 @@ describe('#userModule()', function() {
     })
 
     context('countAllowedUsers()', function(){
-        it('should return 1 allowed user', function() {
+        it('should return 0 allowed user', function() {
             expect(userModule.countAllowedUsers()).to.equal(0)
         })
     })
-
-    // context('allowUsers()', function() {
-    //     userModule.allowUser('someone');
-    //     it('should return 1 allowed users', function() {
-    //         expect(userModule.countAllowedUsers()).to.equal(1)
-    //     })
-    // })
+    
+    context('allowUsers()', function() {
+        it('should return 1 allowed users', function() {
+            userModule.allowUser('someone');
+            expect(userModule.countAllowedUsers()).to.equal(1)
+        })
+    })
 })

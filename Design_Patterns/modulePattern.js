@@ -1,6 +1,6 @@
 const userModule = (function () {
     const users = [];
-    const allowedUsers = [];
+    // const allowedUsers = [];
     function findUser(u, token) {
         return users.find( user => user[token] == u );
     };
@@ -15,12 +15,14 @@ const userModule = (function () {
             findUser(u, "name").allowed = false;
         },
         countAllowedUsers: function() {
-            allowedUsers.length = 0;
+            // allowedUsers = [];
+            let allowedUsers = 0;
             users.forEach(user => {
                 if(user.allowed === true)
-                    allowedUsers.push(user);
+                    allowedUsers++;
             }); 
-            return allowedUsers.length;
+            return allowedUsers;
+            // return allowedUsers.length;
         }
     }
 })();
